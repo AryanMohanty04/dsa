@@ -22,3 +22,29 @@ output: 3
         return count;
     }
 ```
+---
+### Question 2: Palindrome Number (numbers_002)
+Given an integer x, return true if x is a palindrome, and false otherwise.
+
+Input: x = 121
+
+Output: true
+
+Explanation: 121 reads as 121 from left to right and from right to left.
+
+- store the original number in a variable (so the modification done with the number wont get reflected while comparing)
+- reversed number -> rev_number*10 + (x%10);
+
+```java
+  public static boolean palindrome(int number){
+        number = Math.abs(number);
+        int originalNumber = number;
+        int reversedNumber = 0;
+
+        while(number > 0){
+            reversedNumber = reversedNumber*10 + (number%10);
+            number = number/10;
+        }
+        return reversedNumber == originalNumber;
+    }
+```
