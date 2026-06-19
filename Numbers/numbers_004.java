@@ -24,6 +24,6 @@ public class numbers_004 {
     }
     public static void main(String[] args) {
         System.out.println("Basic Approach to the Problem:-> "+trailingZeroes(5));
-        System.out.println("Effective way to handle values larger than 13:-> " +trailingZeroes_Efficient(25));
+        System.out.println("Effective way to handle values larger than 13:-> "+trailingZeroes_Efficient(25));
     }
 }
